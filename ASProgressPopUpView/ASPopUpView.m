@@ -13,10 +13,10 @@
 
 #import "ASPopUpView.h"
 
-#define ARROW_LENGTH 13
-#define MIN_POPUPVIEW_WIDTH 36.0
-#define MIN_POPUPVIEW_HEIGHT 27.0
-#define POPUPVIEW_WIDTH_INSET 10.0
+#define ARROW_LENGTH 5
+#define MIN_POPUPVIEW_WIDTH 0.0
+#define MIN_POPUPVIEW_HEIGHT 0.0
+#define POPUPVIEW_WIDTH_INSET 0.0
 
 NSString *const FillColorAnimation = @"fillColor";
 
