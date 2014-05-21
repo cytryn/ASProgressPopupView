@@ -4,9 +4,12 @@ ASProgressPopUpView
 ###What is it?
 
 
-A UIProgressView subclass that displays the percentage complete in an easy to customize popup view. It’s the cousin to [ASValueTrackingSlider](https://github.com/alskipp/ASValueTrackingSlider).
+A UIProgressView subclass that displays the percentage complete in an easy to customize popUpView.
 
 ![screenshot] (http://alskipp.github.io/ASProgressPopUpView/img/screenshot1.gif)
+
+If you'd like similar functionality for UISlider, then take a look at [ASValueTrackingSlider](https://github.com/alskipp/ASValueTrackingSlider).
+
 
 Features
 ---
@@ -17,6 +20,7 @@ Features
   * font
   * popUpViewColor
   * popUpViewAnimatedColors - popUpView and progress bar color animate as value changes
+  * popUpViewCornerRadius
 * Optional dataSource - supply your own custom text to the popUpView label
 * Wholesome springy animation
 
@@ -41,11 +45,14 @@ The example below demonstrates how to customize the appearance.
 ```objective-c
 self.progressView.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:26];
 self.progressView.popUpViewAnimatedColors = @[[UIColor redColor], [UIColor orangeColor], [UIColor greenColor]];
+self.progressView.popUpViewCornerRadius = 16.0;
 ```
 
-You update the value exactly as you would normally use a UIProgressView, just update the ‘progress’ property `self.progressView.progress = 0.29;`.
+You update the value exactly as you would normally use a UIProgressView, just update the `progress` property `self.progressView.progress = 0.31;`.
 
 ![screenshot] (http://alskipp.github.io/ASProgressPopUpView/img/screenshot2.png)
+
+With `version 0.7.1` and above, the animated progress method is supported `- (void)setProgress:(float)progress animated:(BOOL)animated`. When updating the progress in increments `> 0.05` the results will be much smoother using the animated form.
 
 
 ###How to use custom strings in popUpView label
