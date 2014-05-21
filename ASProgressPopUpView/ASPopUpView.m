@@ -35,11 +35,11 @@
 
 #import "ASPopUpView.h"
 
-const float ARROW_LENGTH = 13.0;
-const float MIN_POPUPVIEW_WIDTH = 36.0;
-const float MIN_POPUPVIEW_HEIGHT = 27.0;
-const float POPUPVIEW_WIDTH_PAD = 1.15;
-const float POPUPVIEW_HEIGHT_PAD = 1.1;
+const float ARROW_LENGTH = 5.0;
+const float MIN_POPUPVIEW_WIDTH = 0.0;
+const float MIN_POPUPVIEW_HEIGHT = 0.0;
+const float POPUPVIEW_WIDTH_PAD = 1.0;
+const float POPUPVIEW_HEIGHT_PAD = 1.0;
 
 NSString *const FillColorAnimation = @"fillColor";
 
